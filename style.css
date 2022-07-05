@@ -83,7 +83,6 @@ video {
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
 }
 
@@ -130,4 +129,50 @@ q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap'); */
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#header {
+    background-image: url(./img/bg.jpg);
+    width: 100vw;
+    height: 100vh;
+    padding: 30px 0;
+}
+
+.logo {
+    margin: -10px 0 0;
+}
+
+.menu-link {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px #000;
+    position: relative;
+}
+
+.menu-link-home:after {
+    content: '';
+    width: 60%;
+    height: 2px;
+    background: rgb(238, 163, 207);
+    position: absolute;
+    bottom: 2px;
+    left: 16px;
+}
+
+.menu-link:hover {
+    color: white;
+}
+
+#menu__toggle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
 }
