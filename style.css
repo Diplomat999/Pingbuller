@@ -240,12 +240,38 @@ body {
 
 .about {
     padding: 50px 0;
+    /* background: rgb(65,29,79); */
+    background: linear-gradient(90deg, rgba(65, 29, 79, 1) 0%, rgba(31, 4, 45, 0.75) 40%);
+    color: white;
 }
 
-.about-container {
-    padding: 0 100px;
+.about-title {
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: 700;
+    padding: 0 0 15px;
+    position: relative;
+}
+
+.fa-wrench,
+.fa-comment,
+.fa-music {
+    position: absolute;
+    top: 0;
+    left: -30px;
 }
 
 .about-content {
     padding: 0 0 0 30px;
+    width: 70%;
+    line-height: 1.5;
+}
+
+.about-content-link {
+    padding: 25px 30px 0;
+}
+
+.about-content-link a {
+    text-transform: uppercase;
+    color: white;
 }
