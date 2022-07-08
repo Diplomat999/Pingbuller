@@ -336,19 +336,19 @@ body {
     left: -30px;
 }
 
-.started-slide-content:after {
+/* .started-slide-content:after {
     content: '';
     display: block;
-    /* width: 20px; */
+    width: 20px;
     height: 20px;
-    /* background: #ffffff; */
+    background: #ffffff;
     border: 30px solid transparent;
     border-top: 25px solid #ffffff;
     position: absolute;
     right: 40px;
     bottom: -100px;
     z-index: 1;
-}
+} */
 
 
 .started-slide-title {
