@@ -131,18 +131,34 @@ table {
     border-spacing: 0;
 }
 
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap'); */
-
 @font-face {
-    font-family: "OpenSans";
-    src: url("./fonts/LeagueGothic/LeagueGothicRegular.woff") format("woff");
+    font-family: 'Gothic Regular';
+    src: url("./font/LeagueGothic/LeagueGothicRegular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Nunitosans black';
+    src: url("./font/nunitosans/Nunitosansblack.woff") format("woff");
+    src: url("./font/nunitosans/Nunitosansblack.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunitosans';
+    src: url("./font/nunitosans/Nunitosansbold.woff") format("woff");
+    src: url("./font/nunitosans/Nunitosansbold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Gothic Regular', 'Nunitosans', 'Roboto Condensed', sans-serif;
 }
 
 #header {
@@ -164,10 +180,11 @@ body {
 .menu-link {
     text-transform: uppercase;
     color: white;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 700;
     text-shadow: 2px 2px 4px #000;
     position: relative;
+    padding: 0 25px;
 }
 
 .menu-link-home:after {
@@ -207,14 +224,14 @@ body {
     height: 100%;
 }
 
-.slide-coontent {
-    padding: 70px 45px 70px 100px;
+.slide-content {
+    width: 65%;
 }
 
 .slide-title {
     text-transform: capitalize;
     color: white;
-    font-size: 40px;
+    font-size: 52px;
     font-weight: 700;
     text-shadow: 2px 2px 4px #000;
 }
@@ -222,33 +239,35 @@ body {
 .slide-subtitle {
     text-transform: uppercase;
     color: rgb(238, 163, 207);
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 700;
     text-shadow: 2px 2px 4px #000;
 }
 
 .slide-text {
     color: white;
-    font-size: 19px;
-    font-weight: 700;
+    font-size: 17px;
+    font-weight: 400;
     text-shadow: 2px 2px 4px #000;
+    font-family: sans-serif;
 }
 
 .slide-image {
     padding-top: 10px;
 }
 
+/* section-about */
+
 .about {
     padding: 50px 0;
-    /* background: rgb(65,29,79); */
     background: linear-gradient(90deg, rgba(65, 29, 79, 1) 0%, rgba(31, 4, 45, 0.75) 40%);
     color: white;
 }
 
 .about-title {
     text-transform: uppercase;
-    font-size: 19px;
-    font-weight: 700;
+    font-size: 30px;
+    font-weight: 400;
     padding: 0 0 15px;
     position: relative;
 }
@@ -257,15 +276,22 @@ body {
 .fa-comment,
 .fa-music {
     position: absolute;
-    top: 0;
-    left: -30px;
+    top: 3px;
+    left: -55px;
 }
 
 .about-content {
     padding: 0 0 0 30px;
     width: 70%;
-    line-height: 1.5;
 }
+
+.about-text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
 
 .about-content-link {
     padding: 25px 30px 0;
@@ -274,4 +300,67 @@ body {
 .about-content-link a {
     text-transform: uppercase;
     color: white;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.about-content-link a:hover {
+    text-decoration: none;
+    text-shadow: 2px 2px 4px #ffffff;
+}
+
+/* section started */
+
+.started {
+    background: rgb(243, 242, 242);
+    padding: 30px 0;
+}
+
+.started-slide {
+    padding-right: 20px;
+}
+
+.started-slide-content {
+    padding: 35px;
+    width: 80%;
+    background: #ffffff;
+    position: relative;
+}
+
+.started-slide-content:before {
+    content: '';
+    background-image: url(./img/photo.png);
+    width: 48px;
+    height: 51px;
+    position: absolute;
+    top: 20px;
+    left: -30px;
+}
+
+.started-slide-content:after {
+    content: '';
+    display: block;
+    /* width: 20px; */
+    height: 20px;
+    /* background: #ffffff; */
+    border: 30px solid transparent;
+    border-top: 25px solid #ffffff;
+    position: absolute;
+    right: 40px;
+    bottom: -100px;
+    z-index: 1;
+}
+
+
+.started-slide-title {
+    font-family: 'Gothic Regular', 'Nunitosans', 'Roboto Condensed', sans-serif;
+    padding: 0 0 15px 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 23px;
+}
+
+.started-slide-text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 1.3;
 }
