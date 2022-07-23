@@ -1,7 +1,6 @@
 $(document).ready(function () {
   $('.slider').bxSlider({
     slideMargin: 40,
-
   });
 
   $('.started-slider').bxSlider({
